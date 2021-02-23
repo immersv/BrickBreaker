@@ -17,7 +17,7 @@ public class BrickSpawn : MonoBehaviour
            brickArray[i]= Instantiate(brick,  transform.position, Quaternion.identity);
             
         }
-        int randValue = Random.Range(1, brickArray.Length);
+        int randValue = Random.Range(0, brickArray.Length);
         brickArray[randValue].tag = "SuperBrick";
 
     }
